@@ -6,7 +6,7 @@ import { FaCartArrowDown } from "react-icons/fa";
 class NavBar extends Component {
   state = {
     navbarOpen: false,
-    css: "collapse navbar-collapse show",
+    css: "collapse navbar-collapse",
     links: [
       { id: 1, path: "/", text: "home" },
       { id: 2, path: "/about", text: "about" },
@@ -15,7 +15,10 @@ class NavBar extends Component {
   navbarHandler = () => {
     this.state.navbarOpen
       ? this.setState({ navbarOpen: false, css: "collapse navbar-collapse" })
-      : this.setState({ navbarOpen: true, css: "collapse navbar-collapse show" });
+      : this.setState({
+          navbarOpen: true,
+          css: "collapse navbar-collapse show",
+        });
   };
   render() {
     return (
@@ -27,7 +30,7 @@ class NavBar extends Component {
         {/*  https://www.iconfinder.com/icons/185113/coffee_streamline_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/webalys */}
-        <button className="navbar-toggler" type="button">
+        <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={this.state.css}>
@@ -41,7 +44,7 @@ https://www.iconfinder.com/webalys */}
                 </li>
               );
             })}
-            <li className="nav-item ml-sm-5 mt-2">
+            <li className="nav-item ms-sm-5">
               <FaCartArrowDown className="cart-icon" />
             </li>
           </ul>
