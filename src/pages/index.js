@@ -3,7 +3,7 @@ import { FaGulp } from "react-icons/fa";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import BackgroundSection from "../components/global/backgroundSection.js";
+import BackgroundSection from "../components/Global/backgroundSection.js";
 
 const IndexPage = ({ data }) => (
   <Layout>

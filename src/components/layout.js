@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import NavBar from "./global/navbar.js";
+import NavBar from "./Global/navbar.js";
 import "./layout.css";
 import "./bootstrap.css";
 
