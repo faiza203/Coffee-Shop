@@ -1,9 +1,11 @@
 import React from "react";
 import { FaGulp } from "react-icons/fa";
 import { graphql } from "gatsby";
+
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/Global/backgroundSection.js";
+import Info from "../components/Home/info.js";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,6 +15,7 @@ const IndexPage = ({ data }) => (
       title="Regular Joe's"
       styleClass="default-background"
     />
+    <Info />
     <FaGulp />
   </Layout>
 );
