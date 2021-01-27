@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import Title from "../Global/title";
 
 export default function ifo() {
   return (
@@ -7,6 +8,7 @@ export default function ifo() {
       <div className="container">
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
+              <Title title="Our Story" />
             <p className="lead text-muted mb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.
