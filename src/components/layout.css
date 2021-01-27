@@ -1,9 +1,9 @@
 :root {
-  --mainBrown: #2d1ef1;
-  --mainYellow: #ff9e09;
-  --mainGrey: #ece8dc;
-  --mainWhite: #fff;
-  --mainDark: #222;
+  --mainBrown: rgb(45, 30, 241);
+  --mainYellow: rgb(255, 158, 9);
+  --mainGrey: rgb(236, 232, 220);
+  --mainWhite: rgb(255, 255, 255);
+  --mainDark: rgb(34, 34, 34);
 }
 
 body {
@@ -36,7 +36,16 @@ h6 {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 158, 9, 0.5) !important;
+  background-color: rgba(255, 158, 9, 0.5) ;
   justify-content: center;
   opacity: 1 !important;
+}
+
+.btn-yellow {
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+.btn-yellow:hover {
+  color: var(--mainWhite) !important;
+  background-color: var(--mainYellow) ;
 }
