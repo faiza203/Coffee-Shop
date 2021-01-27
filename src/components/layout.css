@@ -20,6 +20,7 @@ h5,
 h6 {
   font-family: cursive;
   letter-spacing: 0.25rem !important;
+  font-style: oblique;
 }
 
 .text-yellow {
