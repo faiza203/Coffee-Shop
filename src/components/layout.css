@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Courier New", Courier, monospace !important;
+  font-family: cursive;
   letter-spacing: 0.25rem !important;
 }
 
@@ -30,4 +30,13 @@ h6 {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 158, 9, 0.5) !important;
+  justify-content: center;
+  opacity: 1 !important;
 }

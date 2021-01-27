@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGulp } from "react-icons/fa";
-
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/global/backgroundSection.js";
@@ -8,11 +8,10 @@ import BackgroundSection from "../components/global/backgroundSection.js";
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Home</h1>
     <BackgroundSection
-        img={data.img.childImageSharp.fluid}
-        title="Regular Joe's"
-        styleClass="default-background"
+      img={data.img.childImageSharp.fluid}
+      title="Regular Joe's"
+      styleClass="default-background"
     />
     <FaGulp />
   </Layout>
