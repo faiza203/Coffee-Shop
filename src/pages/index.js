@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundSection from "../components/Global/backgroundSection.js";
 import Info from "../components/Home/info.js";
+import Menu from "../components/Home/menu";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
+    <Menu items={data.menu} />
     <FaGulp />
   </Layout>
 );
