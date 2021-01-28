@@ -20,6 +20,19 @@ export default class Menu extends Component {
       categories: getCategories(props.items.edges),
     };
   }
+  handleItems = (category) => {
+    let tempItems = [...this.state.items];
+    if (category === "all") {
+      this.setState(() => {
+        return { coffeeItems: tempItems };
+      });
+    } else {
+      let items = tempItems.filter(({ node }) => node.category === category);
+      this.setState(() => {
+        return { coffeeItems: items };
+      });
+    }
+  };
   render() {
     if (this.state.items.length > 0) {
       return (
@@ -34,9 +47,9 @@ export default class Menu extends Component {
                       type="button"
                       key={index}
                       className="btn btn-yellow text-capitalize m-3"
-                      //   onClick={() => {
-                      //     this.handleItems(category);
-                      //   }}
+                      onClick={() => {
+                        this.handleItems(category);
+                      }}
                     >
                       {category}
                     </button>
