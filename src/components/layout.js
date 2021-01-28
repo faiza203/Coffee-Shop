@@ -6,13 +6,15 @@ import Footer from "./Global/footer";
 import "./layout.css";
 import "./bootstrap.css";
 
-const Layout = ({ children }) => (
-  <>
-    <NavBar />
-    {children}
-    <Footer />
-  </>
-);
+const Layout = ({ children }) => {
+  return (
+    <>
+      <NavBar />
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
