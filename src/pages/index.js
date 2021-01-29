@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
       title="Regular Joe's"
       styleClass="default-background"
     />
-    <Info />
+    <Info go="about"/>
     <Menu items={data.menu} />
     <FaGulp />
   </Layout>

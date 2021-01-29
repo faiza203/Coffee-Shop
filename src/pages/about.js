@@ -15,7 +15,7 @@ const AboutPage = ({ data }) => (
       title="About Us"
       styleClass="about-background"
     />
-    <Info />
+    <Info go="home" />
     <FaGulp />
   </Layout>
 );
