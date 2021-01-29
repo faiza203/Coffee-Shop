@@ -8,6 +8,7 @@ import BackgroundSection from "../components/Global/backgroundSection.js";
 import Info from "../components/Home/info.js";
 import Menu from "../components/Home/menu";
 import Products from "../components/Home/products";
+import Contact from "../components/Home/contact";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -20,6 +21,7 @@ const IndexPage = ({ data }) => (
     <Info go="about" />
     <Menu items={data.menu} />
     <Products />
+    <Contact />
     <FaGulp />
   </Layout>
 );
