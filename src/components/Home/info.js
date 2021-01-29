@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Title from "../Global/title";
 
-export default function ifo() {
+export default function info() {
   return (
     <section className="py-5">
       <div className="container">
