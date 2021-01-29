@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import BackgroundSection from "../components/Global/backgroundSection.js";
 import Info from "../components/Home/info.js";
 import Menu from "../components/Home/menu";
+import Products from "../components/Home/products";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,8 +17,9 @@ const IndexPage = ({ data }) => (
       title="Regular Joe's"
       styleClass="default-background"
     />
-    <Info go="about"/>
+    <Info go="about" />
     <Menu items={data.menu} />
+    <Products />
     <FaGulp />
   </Layout>
 );
