@@ -20,7 +20,14 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
-        accessToken : `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+        accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-snipcart`,
+      options: {
+        apiKey: `${process.env.CART_API}`,
+        autopop: true,
       },
     },
     `gatsby-transformer-sharp`,

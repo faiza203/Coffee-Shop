@@ -16,6 +16,7 @@ export default function Contact() {
                 name="name"
                 id="name"
                 placeholder="Your's Name"
+                required
               />
             </div>
             <div className="form-group">
@@ -26,6 +27,7 @@ export default function Contact() {
                 name="email"
                 id="email"
                 placeholder="your@email.com"
+                required
               />
             </div>
             <div className="form-group">

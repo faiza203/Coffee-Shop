@@ -12,6 +12,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,

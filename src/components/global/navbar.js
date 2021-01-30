@@ -26,11 +26,11 @@ class NavBar extends Component {
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="Logo"></img>{" "}
         </Link>
-
-        {/*  https://www.iconfinder.com/icons/185113/coffee_streamline_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/webalys */}
-        <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={this.navbarHandler}
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={this.state.css}>

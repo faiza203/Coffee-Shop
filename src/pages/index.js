@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
     <Info go="about" />
     <Menu items={data.menu} />
     <Products />
-    <FaGulp />
+    <FaGulp className="cart-icon" />
     <Contact />
   </Layout>
 );
