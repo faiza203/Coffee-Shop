@@ -26,14 +26,13 @@ const IndexPage = ({ data }) => (
   </Layout>
 );
 
-const imageType =
-  "...GatsbyImageSharpFluid " | " ...GatsbyImageSharpFluid_tracedSVG";
+
 export const query = graphql`
   {
     img: file(relativePath: { eq: "default-background.jpeg" }) {
       childImageSharp {
         fluid {
-         ${imageType}
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -49,7 +48,7 @@ export const query = graphql`
           category
           image {
             fixed(width: 50, height: 50) {
-              ${imageType}
+              ...GatsbyContentfulFixed_tracedSVG
             }
           }
         }
