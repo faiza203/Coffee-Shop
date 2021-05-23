@@ -4,11 +4,11 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import BackgroundSection from "../components/Global/backgroundSection.js";
-import Info from "../components/Home/info.js";
+import {BackgroundSection} from "../components/Global";
+import Info from "../components/Home/info";
 import Menu from "../components/Home/menu";
 import Products from "../components/Home/products";
-import Contact from "../components/Home/contact";
+import Contact from "../components/Home/Contact";
 
 const IndexPage = ({ data }) => (
   <Layout>

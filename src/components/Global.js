@@ -1,9 +1,32 @@
-import React, { Component } from "react";
+import React , {Component}from "react";
 import { Link } from "gatsby";
-import logo from "../../images/logo.svg";
+import BackgroundImage from "gatsby-background-image";
 import { FaCartArrowDown } from "react-icons/fa";
+import logo from "../images/logo.svg";
 
-class NavBar extends Component {
+export function BackgroundSection({
+  img,
+  styleClass,
+  title,
+  children,
+}) {
+  return (
+    <BackgroundImage className={styleClass} fluid={img}>
+      <h1 className="title text-white  text-uppercase  text-center display-4 font-weight-bold">
+        {title}
+      </h1>
+      {children}
+    </BackgroundImage>
+  );
+}
+
+BackgroundSection.defaultProps = {
+  title: "default title",
+  styleClass: "default-background",
+};
+
+
+export class NavBar extends Component {
   state = {
     navbarOpen: false,
     css: "collapse navbar-collapse",
@@ -54,4 +77,27 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+
+export  function Footer() {
+    return (
+      <footer className="footer py-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-10 mx-auto col-md-6 text-yellow text-center text-capitalize">
+              <h3>
+                all rights reserved &copy; {new Date().getFullYear().toString()}
+              </h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+
+export  function title({ title }) {
+  return (
+    <div className="text-uppercase text-center">
+      <h1>{title}</h1>
+    </div>
+  );
+}

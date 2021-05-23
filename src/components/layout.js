@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import NavBar from "./Global/navbar.js";
-import Footer from "./Global/footer";
+import {NavBar , Footer} from "./Global";
 import "./layout.css";
 import "./bootstrap.css";
 
@@ -21,3 +20,4 @@ Layout.propTypes = {
 };
 
 export default Layout;
+

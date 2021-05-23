@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Title from "./../Global/title";
+import {Title} from "../Global";
 import Img from "gatsby-image";
 
 const getCategories = (items) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "./../Global/title";
+import {Title} from "../Global";
 
 export default function Contact() {
   return (
